@@ -1,11 +1,12 @@
 package org.simple;
 
+import org.springframework.stereotype.Component;
+
 import javax.servlet.ServletContext;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.Context;
-import org.springframework.stereotype.Component;
 
 @Component
 @Path("/")
