@@ -22,23 +22,26 @@
         <url-pattern>/</url-pattern>
     </servlet-mapping>
 
-    <filter>
-        <filter-name>resteasy</filter-name>
-        <filter-class>org.jboss.resteasy.plugins.server.servlet.FilterDispatcher</filter-class>
-        <init-param>
-            <param-name>should.be.available</param-name>
-            <param-value>a param value</param-value>
-        </init-param>
-    </filter>
+<!--    <filter>-->
+<!--        <filter-name>resteasy</filter-name>-->
+<!--        <filter-class>org.jboss.resteasy.plugins.server.servlet.FilterDispatcher</filter-class>-->
+<!--        <init-param>-->
+<!--            <param-name>should.be.available</param-name>-->
+<!--            <param-value>a param value</param-value>-->
+<!--        </init-param>-->
+<!--    </filter>-->
 
-    <filter-mapping>
-        <filter-name>resteasy</filter-name>
-        <url-pattern>/*</url-pattern>
-    </filter-mapping>
+<!--    <filter-mapping>-->
+<!--        <filter-name>resteasy</filter-name>-->
+<!--        <url-pattern>/*</url-pattern>-->
+<!--    </filter-mapping>-->
+
+<!--    <listener>-->
+<!--        <listener-class>org.springframework.web.context.request.RequestContextListener</listener-class>-->
+<!--    </listener>-->
 
     <listener>
-        <listener-class>org.springframework.web.context.request.RequestContextListener</listener-class>
+        <listener-class>org.simple.MyServletRequestListener</listener-class>
     </listener>
-
 </web-app>
 

@@ -17,8 +17,6 @@ public class ServletContextAwareService {
     @Path("/inject")
     @Produces("application/json")
     public String status(@Context ServletContext context) {
-
         return context.getInitParameter("should.be.available");
-
     }
 }
