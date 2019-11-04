@@ -43,5 +43,8 @@
     <listener>
         <listener-class>org.simple.MyServletRequestListener</listener-class>
     </listener>
+<!--    <listener>-->
+<!--        <listener-class>org.simple.MyServletContextListener</listener-class>-->
+<!--    </listener>-->
 </web-app>
 
