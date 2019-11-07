@@ -10,7 +10,8 @@
         <description>ResteasyContextInjection</description>
         <display-name>resteasy-inject</display-name>
         <servlet-name>resteasy-inject</servlet-name>
-        <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+<!--        <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>-->
+        <servlet-class>org.simple.MySpringDispatcherServlet</servlet-class>
         <init-param>
             <param-name>contextConfigLocation</param-name>
             <param-value>WEB-INF/application-context.xml</param-value>
@@ -40,9 +41,11 @@
 <!--        <listener-class>org.springframework.web.context.request.RequestContextListener</listener-class>-->
 <!--    </listener>-->
 
-    <listener>
-        <listener-class>org.simple.MyServletRequestListener</listener-class>
-    </listener>
+<!--    <listener>-->
+<!--        <listener-class>org.simple.MyServletRequestListener</listener-class>-->
+<!--    </listener>-->
+
+
 <!--    <listener>-->
 <!--        <listener-class>org.simple.MyServletContextListener</listener-class>-->
 <!--    </listener>-->

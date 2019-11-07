@@ -11,6 +11,7 @@ public class MyServletRequestListener implements ServletRequestListener {
    @Override
    public void requestDestroyed(ServletRequestEvent servletRequestEvent) {
       System.out.println("::MyServletRequestListener.requestDestroyed()");
+      ResteasyContext.popContextData(ServletContext.class);
    }
 
    @Override
